@@ -1,7 +1,19 @@
 package ch.divtec;
 
 public class Calculator {
-    public static void main(String[] args) {
-        System.out.println("Hello World !");
+    double add(double a, double b) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    double subtract(double a, double b) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    double multiply(double a, double b) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    double divide(double a, double b) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
