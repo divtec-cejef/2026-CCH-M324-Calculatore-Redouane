@@ -110,10 +110,7 @@ class CalculatorTest {
             calculator.factorial(3.2);
         });
 
-        String expectedMessage = "Number must be an integer.";
-        String actualMessage = exception.getMessage();
-
-        assertTrue(actualMessage.contains(expectedMessage));
+        assertEquals("Number must be an integer.", exception.getMessage());
     }
 
     @Test
@@ -122,9 +119,6 @@ class CalculatorTest {
            calculator.factorial(-3);
         });
 
-        String expectedMessage = "Number must be positive.";
-        String actualMessage = exception.getMessage();
-
-        assertTrue(actualMessage.contains(expectedMessage));
+        assertEquals("Number must be positive.", exception.getMessage());
     }
 }
